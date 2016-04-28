@@ -1,7 +1,9 @@
 function  S=CubicSplineInterp(x,y,v,u);
 %clamped cubic spline
-%(x,y) are the given points, u is the x-values of interpolated points, v is
-%the boundary condition(the first-order derivative value at the boundary points)
+%Input:(x,y) are the given points
+%       u is the x-values of interpolated points
+%       v is the boundary condition(the first-order derivative value at the boundary points)
+%Output:S is the interpolated function values corresponding to u
 
 m=length(x);
 
